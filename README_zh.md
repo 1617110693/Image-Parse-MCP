@@ -65,7 +65,7 @@ export IMAGE_PARSE_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
 export IMAGE_PARSE_MODEL=qwen-vl-max
 ```
 
-### 示例： DeepSeek
+### 示例：DeepSeek
 
 ```bash
 export IMAGE_PARSE_API_KEY=你的-deepseek-api-key

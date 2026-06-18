@@ -13,6 +13,7 @@ Any provider with an OpenAI-compatible chat completions endpoint:
 - **Google Gemini** (via OpenAI-compatible endpoint)
 - **Azure OpenAI**
 - **Local models** (Ollama, vLLM, LM Studio with OpenAI-compatible servers)
+- **Alibaba Bailian** — Qwen-VL (via OpenAI-compatible endpoint)
 - **Third-party** (DeepSeek, Groq, Together.ai, OpenRouter, etc.)
 
 ## Configuration
@@ -55,6 +56,22 @@ export IMAGE_PARSE_MODEL=llava
 export IMAGE_PARSE_API_KEY=your-azure-api-key
 export IMAGE_PARSE_BASE_URL=https://your-resource.openai.azure.com/openai/deployments/your-deployment
 export IMAGE_PARSE_MODEL=gpt-4o
+```
+
+### Example: Alibaba Bailian (Qwen-VL)
+
+```bash
+export IMAGE_PARSE_API_KEY=your-dashscope-api-key
+export IMAGE_PARSE_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+export IMAGE_PARSE_MODEL=qwen-vl-max
+```
+
+### Example: DeepSeek
+
+```bash
+export IMAGE_PARSE_API_KEY=your-deepseek-api-key
+export IMAGE_PARSE_BASE_URL=https://api.deepseek.com/v1
+export IMAGE_PARSE_MODEL=deepseek-chat
 ```
 
 ## Install & Run
